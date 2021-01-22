@@ -13,16 +13,16 @@ def changeWindow(kb):
 
 def TellHer(ms, kb):
     # ms.position = ms.
-    # ms.press(bt.left)
-    # ms.release(bt.left)
-    kb.type("nihao")
+    ms.press(bt.left)
+    ms.release(bt.left)
+    kb.type("nimenjidianke")
     kb.press(Key.space)
     kb.release(Key.space)
     # kb.press(Key.shift)
     # kb.release(Key.shift)
     kb.press(Key.space)
     kb.release(Key.space)
-    kb.type("nihao")
+    kb.type("nimenjidianke")
     kb.press(Key.space)
     kb.release(Key.space)
     kb.press(Key.space)
@@ -37,8 +37,8 @@ def TellHer(ms, kb):
 def main():
     ms = Mouse()
     kb = Keyboard()
-    # changeWindow(kb)
-    for i in range(200):
+    changeWindow(kb)
+    for i in range(20):
         TellHer(ms, kb)
         # kb.type("^v")
         # kb.press(Key.cmd)
