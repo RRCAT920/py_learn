@@ -2,7 +2,6 @@
 给函数传递列表
 """
 
-
 names = ["alex", "jack"]
 
 
@@ -12,7 +11,6 @@ def change(lst):
 
 change(names)
 print(names)
-
 
 name = "harrison"
 
