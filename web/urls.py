@@ -6,6 +6,7 @@ from views import *
 urls = [
     ('/index', index),
     ('/login', login),
+    ('/get_time', get_time)
 ]
 
 
