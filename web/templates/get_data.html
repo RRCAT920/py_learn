@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MySQL</title>
+</head>
+<body>
+{{ user_list }}
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Username</th>
+        <th>Balance</th>
+    </tr>
+    {% for user in user_list %}
+        <tr>
+            <td>{{ user.id }}</td>
+            <td>{{ user.username }}</td>
+            <td>{{ user.balance }}</td>
+        </tr>
+    {% endfor %}
+</table>
+</body>
+</html>
