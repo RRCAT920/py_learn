@@ -55,7 +55,7 @@ while True:
 
     conn.send(b'HTTP/1.1 200 OK\r\n\r\n')
     if path == '/index':
-        with open('index.html', 'rb') as f:
+        with open('templates/index.html', 'rb') as f:
             conn.send(f.read())
     elif path == '/login':
         pass
