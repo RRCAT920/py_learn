@@ -2,6 +2,10 @@ import json
 from datetime import datetime
 import hashlib
 
+"""
+只有一个文件，故不会锁定其他用户
+"""
+
 file = ''
 info = None
 for _ in range(3):
